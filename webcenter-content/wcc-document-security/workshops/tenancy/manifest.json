@@ -46,6 +46,11 @@
       "filename": "./../../07-verify-folder-documents-security/07-verify-folder-documents-security.md"
     },
     {
+      "title": "Lab 6: Configuring WebCenter Content Custom Meta Data and Profile and Rules",
+      "description": "This lab shows you how to create  Custom Meta Data, Profile and Profile Rules ",
+      "filename": "./../../08-configuring-custom-metadata-profile-and-rules/08-configuring-custom-metadata-profile-and-rules.md"
+    },
+    {
       "title": "Need Help?",
       "description": "Solutions to Common Problems and Directions for Receiving Live Help",
       "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-freetier.md"
