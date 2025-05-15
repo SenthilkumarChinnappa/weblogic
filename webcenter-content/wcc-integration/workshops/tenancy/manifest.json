@@ -1,10 +1,10 @@
 {
-  "workshoptitle": "Headless WebCenter Content Upload by using Upload API secured by OAuth",
+  "workshoptitle": "Document Management Scenario with WebCenter Content & OPA (Workflow)",
   "help": "mandar.x.tengse@oracle.com",
   "tutorials": [
     {
       "title": "Introduction",
-      "description": "This lab provides detailed guide to create an APEX application and access REST APIs using OAuth on WebCenter Content Server",
+      "description": "This lab provides detailed guide Document Management Scenario with WebCenter Content & OPA (Workflow)",
       "filename": "./../../introduction/introduction.md"
     },
     {
