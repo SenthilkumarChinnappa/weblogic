@@ -89,7 +89,7 @@ This lab assumes you have:
 
 ## Task 2: Configure WCC REST
 
-WIP
+Test Edit
 
 ## Acknowledgements
 
