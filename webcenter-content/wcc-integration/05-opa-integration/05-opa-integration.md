@@ -37,23 +37,25 @@ This lab assumes you have:
 4. A message indicates that it’s being created, then shows a link. Click the Open now link in the message. 
 
   ![Create Application Screen](images/05-opa-integration-task1-step4.jpg "Create Application Screen")
-
 5. Create Roles.
 
-   * From the top of the page, click Add.
+* From the top of the page, click Add.
 
-   * In the Add component pane, expand Roles, and click New.
+* In the Add component pane, expand Roles, and click New.
 
-   * In the Title field, enter Subscriber, and click Create.
-      ![Create Application Screen](05-opa-integration-task1-step5.jpg "Create Application Screen")
+* In the Title field, enter Subscriber, and click Create.
+      ![Create Application Screen](images/05-opa-integration-task1-step5.jpg "Create Application Screen")
 
-   * Click the Open now link or select the role from the Roles page to open it.
+* Click the **Open** now link or select the role from the Roles page to open it.
 
-   * Let’s assign a user and review permissions for the role. In the Search by fields:
-      * Leave Users selected in the drop-down field.
-      * In the Search   field, enter the first few characters of the user name you signed in with.
+* Let’s assign a user and review permissions for the role. In the **Search by** fields:
+
+      * Leave **Users** selected in the drop-down field.
+      * In the **Search** ![Create Application Screen](images/05-opa-integration-task1-step5_1.jpg "Create Application Screen") field, enter the first few characters of the user name you signed in with.
       * Select the user. The user gets listed in the page.
 
+* In the **Application Permission Level** options, leave **Use** selected. This allows your user to start an application request in Workspace.
+   ![Create Application Screen](images/05-opa-integration-task1-step5_2.jpg "Create Application Screen")
 
 ## Acknowledgements
 
