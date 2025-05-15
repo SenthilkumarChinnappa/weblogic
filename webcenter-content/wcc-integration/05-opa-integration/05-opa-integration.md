@@ -3,6 +3,7 @@
 ## Introduction
 
 This Lab walks you through a scenario demonstrating how to use Oracle WebCenter Content (WCC) REST APIs to build an automated document-driven workflow in Oracle Process Automation (OPA).
+
 Participants will learn how to programmatically generate and share public document links, receive external submissions, and automatically route them through approval processes—while storing and managing all content centrally in WebCenter Content.
 
 **Estimated Lab Time**: *30 minutes*
@@ -34,28 +35,41 @@ This lab assumes you have:
 3. Click **Create** button.
 
   ![Create Application Screen](images/05-opa-integration-task1-step3.jpg "Create Application Screen")
-4. A message indicates that it’s being created, then shows a link. Click the Open now link in the message. 
+4. A message indicates that it’s being created, then shows a link. Click the Open now link in the message.
 
   ![Create Application Screen](images/05-opa-integration-task1-step4.jpg "Create Application Screen")
 5. Create Roles.
 
-* From the top of the page, click Add.
+      * From the top of the page, click Add.
 
-* In the Add component pane, expand Roles, and click New.
+      * In the Add component pane, expand Roles, and click New.
 
-* In the Title field, enter Subscriber, and click Create.
-      ![Create Application Screen](images/05-opa-integration-task1-step5.jpg "Create Application Screen")
+      * In the Title field, enter Subscriber, and click Create.
+            ![Create Application Screen](images/05-opa-integration-task1-step5.jpg "Create Application Screen")
 
-* Click the **Open** now link or select the role from the Roles page to open it.
+      * Click the **Open** now link or select the role from the Roles page to open it.
 
-* Let’s assign a user and review permissions for the role. In the **Search by** fields:
+      * Let’s assign a user and review permissions for the role. In the **Search by** fields:
 
-      * Leave **Users** selected in the drop-down field.
-      * In the **Search** ![Create Application Screen](images/05-opa-integration-task1-step5_1.jpg "Create Application Screen") field, enter the first few characters of the user name you signed in with.
-      * Select the user. The user gets listed in the page.
+            * Leave **Users** selected in the drop-down field.
+            * In the **Search** ![Create Application Screen](images/05-opa-integration-task1-step5_1.jpg "Create Application Screen") field, enter the first few characters of the user name you signed in with.
+            * Select the user. The user gets listed in the page.
 
-* In the **Application Permission Level** options, leave **Use** selected. This allows your user to start an application request in Workspace.
-   ![Create Application Screen](images/05-opa-integration-task1-step5_2.jpg "Create Application Screen")
+      * In the **Application Permission Level** options, leave **Use** selected. This allows your user to start an application request in Workspace.
+         ![Create Application Screen](images/05-opa-integration-task1-step5_2.jpg "Create Application Screen")
+
+      * Repeat steps 1 - 4 to create the second role, only this time enter its name as Approver in the Title field.
+         ![Create Application Screen](images/05-opa-integration-task1-step5_3.jpg "Create Application Screen")
+
+      * Repeat step 5 and 6 to assign a user for the Approver role and set permission.
+
+6. Create a Structured Process
+
+      * Click the Subscription Application 1.0 breadcrumb to go to your application’s main page.*
+      * From the top of the page, click Add.
+      * In the Add component pane, expand Processes, and click Structured.
+         ![Create Application Screen](images/05-opa-integration-task1-step5_4.jpg "Create Application Screen")
+
 
 ## Acknowledgements
 
