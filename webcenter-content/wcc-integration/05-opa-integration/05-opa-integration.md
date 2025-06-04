@@ -1,4 +1,4 @@
-# Integrating WebCenter Content Public Links with Oracle Process Automation Using REST APIs
+# Integrating WebCenter Content with Oracle Process Automation Using REST APIs
 
 ## Introduction
 
@@ -20,12 +20,12 @@ This lab assumes you have:
 * Access to WCC
 * Access to OPA.
 
-## Task 1: Create OPA application
+## Task 1: Create a Process Application
 
-1. Create a Process Application in Designer
+1. On the Designer home page (All Applications), click the Create button on top right of the page.
   ![Create New App](images/05-opa-integration-task1-step1.jpg "Create New App")
 
-2. Click Create. The Create Application side pane opens.
+2. The Create Application side pane opens.
 
    In the **Title** field, enter *Subscription Application*. Enter a meaningful description in the **Description** field. Leave the Version Tag field as **1.0**
 
@@ -38,7 +38,7 @@ This lab assumes you have:
 4. A message indicates that it’s being created, then shows a link. Click the Open now link in the message.
 
   ![Create Application Screen](images/05-opa-integration-task1-step4.jpg "Create Application Screen")
-5. Create Roles.
+5. Create Roles
 
 * From the top of the page, click Add.
 
@@ -63,7 +63,9 @@ This lab assumes you have:
 
 * Repeat step 5 and 6 to assign a user for the Approver role and set permission.
 
-6. Create a Structured Process
+## Task 2: Design a Structured Process
+
+   1. Create Process
 
       * Click the **Subscription Application 1.0** breadcrumb to go to your application’s main page.*
 
@@ -74,20 +76,65 @@ This lab assumes you have:
 
       * Enter *RFPProcess* in the **Title** field. Click **Create**. A confirmation message shows that the process was created.
 
-        <copy>RFPProcess</copy>
-
          ![Create RFP Process](images/05-opa-integration-task1-step6_1.jpg "Create RFP Process")
 
       * Select the process to open it. The structured process editor opens. Start and end elements are already positioned on the flow for you. There are two swim lanes and the BPMN elements palette is on the right side.
          ![Create Application Screen](images/05-opa-integration-task1-step6_2.jpg "Create Application Screen")
 
-      * Select the first swimlane containing the start and end element by clicking the bar on the left of the canvas. 
+      * Select the first swimlane containing the start and end element by clicking the bar on the left of the canvas.
          ![Create Application Screen](images/05-opa-integration-task1-step6_3.jpg "Create Application Screen")
 
       * Click the edit icon to open the Properties pane. In the Properties pane, select Subscriber in the Role drop-down field.
          ![Create Application Screen](images/05-opa-integration-task1-step6_4.jpg "Create Application Screen")
 
-## Task 2: Configure WCC REST
+      * Click on start event and click the edit icon. Select Open Properties. Enter the title “Start RFP bid” in Title field
+         ![Process Editor Screen](images/05-opa-integration-task1-step6_5.jpg "Process Editor Screen")
+
+   2. Create Simple Data Objects
+      1. Open the RFPPRocess process, and then click Data icon on the right.
+         ![Process Editor Screen](images/05-opa-integration-task2-step2_1.png "Process Editor Screen")
+
+      2. In the Data pane, click Create Data Object
+         ![Process Editor Screen](images/05-opa-integration-task2-step2_2.png "Process Editor Screen")
+
+      3. In the resulting Create Data Object pane, enter *folderId* in the Name field.
+
+      4. Under Data Type , select Simple.
+
+      5. Click Create.
+         ![Process Editor Screen](images/05-opa-integration-task2-step2_3.png "Process Editor Screen")
+
+      6. Similarly repeat steps 1-5 to create below data objects.
+
+      | **Name**                  | **Data Type**   |
+      |---------------------------|-----------------|
+      | folderId                  | String          |
+      | linkId                    | String          |
+      | vendorFolderId            | String          |
+      | publicLinkforVendorFolder | String          |
+      | vendorLinkId              | String          |
+      | readOnlyLinkId            | String          |
+
+   3. Create Business Type
+      1. Click on Add. Select Business Type
+        ![Process Editor Screen](images/05-opa-integration-task2-step3_1.png "Process Editor Screen")
+
+      2. Add Title as *EmailBT* and click Create. Click Open Now once created.
+        ![Process Editor Screen](images/05-opa-integration-task2-step3_2.png "Process Editor Screen")
+
+      3. Click Add New to add Attributes. Type *email_Id* in Name field. String in Type and Select “Make it an array”
+        ![Process Editor Screen](images/05-opa-integration-task2-step3_3.png "Process Editor Screen")
+
+      4. Now, open the  RFPPRocess process, and click Data. In the Data pane, click Create Data Object
+        ![Process Editor Screen](images/05-opa-integration-task2-step3_4.png "Process Editor Screen")
+
+      5. In Name field enter *emailDataObject* and Data Type as Business. Select EmailBT from dropdown.
+        ![Process Editor Screen](images/05-opa-integration-task2-step3_5.png "Process Editor Screen")
+
+   4. Create UI
+      1. Click Add at the top of the page. In the Add component pane, expand UIs and click Web Form
+      
+## Task 3: Configure WCC REST
 
 Test Edit
 
