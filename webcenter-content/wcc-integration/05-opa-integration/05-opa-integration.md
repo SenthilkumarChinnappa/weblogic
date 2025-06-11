@@ -133,10 +133,68 @@ This lab assumes you have:
 
    4. Create UI
       1. Click Add at the top of the page. In the Add component pane, expand UIs and click Web Form
-      
-## Task 3: Configure WCC REST
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_1.png "Form Editor Screen")
 
-Test Edit
+      2. In the Title field, enter *RFPInitiationForm*
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_2.png "Form Editor Screen")
+
+      3. Click Create, then click the Open now link.
+
+      4. Drag and drop InputText onto the canvas.
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_3.png "Form Editor Screen")
+
+      5. Change its label from InputText to *Project Name*
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_4.png "Form Editor Screen")
+
+      6. Change the Name in the properties field to *projectName*
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_5.png "Form Editor Screen")
+
+      7. Similarly drag another Input Text control onto the canvas and label it *Project Manager Email*
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_6.png "Form Editor Screen")
+
+      8. Change the name in properties window to *projectManagerEmail*
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_7.png "Form Editor Screen")
+
+      9. Add another control to the canvas and label it *fParentGUID*
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_8.png "Form Editor Screen")
+
+      10. Update its name in properties window to *fParentGUID_form*
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_9.png "Form Editor Screen")
+
+      11. Set its default value to root/Parent folder GUID in WCC where you want the folders to be created.
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_10.png "Form Editor Screen")
+
+      12. Select Hide to hide this value on the form in the properties pane.
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_11.png "Form Editor Screen")
+
+      13. Create another form and name it *VendorInputForm*. Click Open Now.
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_12.png "Form Editor Screen")
+
+      14. Drag and drop EmailBT from Type onto the canvas.
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_13.png "Form Editor Screen")
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_14.png "Form Editor Screen")
+
+      15. Update labels as follows
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_15.png "Form Editor Screen")
+         ![Form Editor Screen](images/05-opa-integration-task2-step4_15.png "Form Editor Screen")
+
+## Task 3: Configure REST Connectors
+
+   1. Go to RFPProcess application, click Add in the upper right corner of the page.In the Add component pane, expand Connectors and choose REST API.
+
+      ![Form Editor Screen](images/05-opa-integration-task3-step1_1.png "Form Editor Screen")
+
+   2. In the Add component pane, enter the following information:
+      a.Title: WebCenterConnector
+      b.Identifier Name: Automatically populated to uniquely identify the connector.
+      c.Base URL: Enter the base endpoint you want the connector to access in REST calls. By default, Process Automation appends .com to the connector’s name and displays that as the default URL.
+
+      ![Form Editor Screen](images/05-opa-integration-task3-step2_1.png "Form Editor Screen")
+
+   3. Click Create and Open the Connector
+
+      * Add REST Connector Resources and Operations
+
 
 ## Acknowledgements
 
